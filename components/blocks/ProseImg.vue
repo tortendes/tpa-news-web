@@ -1,13 +1,14 @@
 <template>
-    <div class="my-4 mx-2">
+  <div class="my-4 mx-2 flex flex-col gap-0.5">
     <component
-        :is="ImageComponent"
-        :src="refinedSrc"
-        :alt="props.alt"
-        :width="props.width"
-        :height="props.height"
+      :is="ImageComponent"
+      :src="refinedSrc"
+      :alt="props.alt"
+      :width="props.width"
+      :height="props.height"
     />
-    </div>
+    <span class="text-gray-600 italic">{{ props.alt }}</span>
+  </div>
 </template>
 
 <script setup lang="ts">

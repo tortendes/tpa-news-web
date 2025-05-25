@@ -104,7 +104,7 @@ useSeoMeta({
             <NuxtImg :src="article.coverImage" provider="directus" class="mt-2 shadow-2xl rounded-2xl max-h-96" />
         </div>
     </section>
-    <div class="flex items-center justify center flex-col px-2 md:px-4 py-4">
+    <div class="flex md:items-center md:justify-center flex-col px-2 md:px-4 py-4">
         <main class="max-w-prose">
             <template v-if="content">
                 <MDCRenderer :body="content.body" :data="content.data" />

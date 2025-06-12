@@ -2,6 +2,7 @@
 import type { Article, AuthorRelation } from '~/types/Article';
 import type { Author } from '~/types/Author';
 import MDCPlayer from '~/components/mdc/player.vue'
+import Donate from '~/components/donate.vue'
 const route = useRoute()
 const { getItems, getItemById } = useDirectusItems();
 
@@ -80,7 +81,7 @@ useSeoMeta({
 <template>
     <section class="md:px-8 px-2 py-4 bg-blue-600 text-white flex items-center justify-center flex-col after:bg">
         <div class="max-w-prose">
-            <h1 class="text-2xl font-display font-bold md:text-4xl">{{ article.title }}</h1>
+            <h1 class="text-2xl font-[NRK_Super_Sans_Extended] font-extrabold md:text-4xl">{{ article.title }}</h1>
             <p class="text-gray-300">{{ article.description }}</p>
             <div class="mt-2">
                 <span>By </span>
@@ -105,13 +106,18 @@ useSeoMeta({
         </div>
     </section>
     <div class="flex md:items-center md:justify-center flex-col px-2 md:px-4 py-4">
-        <main class="max-w-prose">
-            <template v-if="content">
-                <MDCRenderer :body="content.body" :data="content.data" />
-            </template>
-        </main>
-        <div class="w-full">
-            <DisqusComments :identifier="article.slug" />
+        <div class="flex gap-4 md:flex-row flex-col relative">
+            <main class="max-w-prose">
+                <template v-if="content">
+                    <MDCRenderer :body="content.body" :data="content.data" />
+                </template>
+            </main>
+            <div>
+                <Donate class="sticky top-2"></Donate>
+            </div>
+        </div>
+        <div class="px-2 md:px-8 py-4 w-full">
+            <DisqusComments :identifier="article.slug" class="w-full" />
         </div>
     </div>
 </template>

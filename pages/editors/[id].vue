@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { LiveReport, Article } from '~/types/Article'
 import type { Author } from '~/types/Author'
-import ArticleBlock from '~/components/article-block.vue'
+import ArticleBlock from '~/components/JournalistProfile/article-block.vue'
 const { getItemById, getItems } = useDirectusItems()
 const route = useRoute()
 

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import relativeTime from 'dayjs/plugin/relativeTime' 
 import type { Live, LiveReport } from '~/types/Article';
-import ArticleComponent from '~/components/ArticleComponent.vue'
+import ArticleComponent from '~/components/LiveArticle/ArticleComponent.vue'
+import Donate from '~/components/donate.vue'
 const route = useRoute();
 const { getItems, getItemById } = useDirectusItems();
 useDayjs().extend(relativeTime)
@@ -70,16 +71,16 @@ useSeoMeta({
             <div class="flex items-center gap-2 mb-2">
                 <span v-if="report.status == 'published'" class="bg-blue-900 px-2 py-0.5 rounded-md flex items-center gap-1">
                     <UIcon name="ix:circle-dot" class="size-5" />
-                    <span class="md:text-base text-xs md:font-display">LIVE</span>
+                    <span class="md:text-base text-xs md:font-display md:font-extrabold">LIVE</span>
                 </span>
                 <span v-else class="bg-yellow-600 px-2 py-0.5 rounded-md flex items-center gap-1">
                     <UIcon name="bx:bxs-archive-in" class="size-5" />
-                    <span class="md:text-base text-xs md:font-display">ARCHIVE</span>
+                    <span class="md:text-base text-xs md:font-display md:font-extrabold">ARCHIVE</span>
                 </span>
                 <span v-if="articles[0]" class="text-gray-300 md:text-base text-sm">Last updated {{ $dayjs().to($dayjs(articles[0].date_created)) }}</span>
                 <span v-else class="text-gray-300 md:text-base text-sm">Developing story...</span>
             </div>
-            <h1 class="text-2xl font-display font-bold md:text-4xl">{{ report.title }}</h1>
+            <h1 class="text-2xl font-[NRK_Super_Sans Extended] font-bold md:text-4xl">{{ report.title }}</h1>
             <p class="text-gray-300 mt-2">{{ report.description }}</p>
         </div>
         <NuxtImg :src="report.coverImage" provider="directus" class="mt-8 shadow-2xl md:rounded-2xl h-auto md:max-w-2/3" />
@@ -99,6 +100,7 @@ useSeoMeta({
                     </section>
                 </div>
             </div>
+            <Donate class="mx-2" />
         </div>
     </section>
 </template>

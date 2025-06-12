@@ -1,7 +1,7 @@
 <template>
     <section v-for="item in fetchLive" class="flex gap-2">
         <NuxtLink :href="`/articles/live/${item.id}`">
-            <p class="font-display">{{ item.short_title }}</p>
+            <p class="font-display font-semibold">{{ item.short_title }}</p>
         </NuxtLink>
     </section>
 </template>

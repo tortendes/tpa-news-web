@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li>
-                    <NuxtLink href="/corporate/newswire">
+                    <NuxtLink href="#">
                         <span class="hover:text-gray-500 text-gray-300 font-mono">TPA Newswire</span>
                     </NuxtLink>
                 </li>

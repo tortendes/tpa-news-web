@@ -8,10 +8,10 @@
             <div class="gap-2 md:visible invisible md:flex hidden">
                 <ShortTitles />
                 <div class="flex gap-2">
-                    <p class="font-display">Politics</p>
-                    <p class="font-display">Business</p>
-                    <p class="font-display">Culture</p>
-                    <p class="font-display">Opinion</p>
+                    <p class="font-display font-semibold">Politics</p>
+                    <p class="font-display font-semibold">Business</p>
+                    <p class="font-display font-semibold">Culture</p>
+                    <p class="font-display font-semibold">Opinion</p>
                 </div>
             </div>
             </div>

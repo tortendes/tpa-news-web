@@ -109,9 +109,6 @@ useSeoMeta({
                         <OurPeople username="Little_Ivy">
                             Camera Operator
                         </OurPeople>
-                        <OurPeople username="Little_Ivy">
-                            Camera Operator
-                        </OurPeople>
                         <OurPeople username="KingBOB99878">
                             Camera Operator
                         </OurPeople>

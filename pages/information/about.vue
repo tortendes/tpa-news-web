@@ -112,7 +112,7 @@ useSeoMeta({
                     <h5 class="font-bold">Staff Emeritus</h5>
                     <div class="grid grid-cols-1 sm:grid-cols-2 col-span-2 gap-2">
                         <OurPeople username="ps2girlfriend">
-                            Camera Operator
+                            Political Journalist
                         </OurPeople>
                     </div>
                 </div>

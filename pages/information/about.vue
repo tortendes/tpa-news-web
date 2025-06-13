@@ -106,6 +106,15 @@ useSeoMeta({
                         <OurPeople username="rora_soul">
                             Stream Operator
                         </OurPeople>
+                        <OurPeople username="Little_Ivy">
+                            Camera Operator
+                        </OurPeople>
+                        <OurPeople username="Little_Ivy">
+                            Camera Operator
+                        </OurPeople>
+                        <OurPeople username="KingBOB99878">
+                            Camera Operator
+                        </OurPeople>
                     </div>
                 </div>
                 <div class="grid md:grid-cols-3 grid-cols-1">

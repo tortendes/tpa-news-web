@@ -69,7 +69,7 @@ useSeoMeta({
                         <OurPeople username="tortenwashere">
                             Editor-in-Chief, Digital Interactive Head
                         </OurPeople>
-                        <OurPeople username="roryyy___">
+                        <OurPeople username="R0rytheRac1ngCar">
                             Independent Consultant
                         </OurPeople>
                     </div>

@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   },
   image: {
     directus: {
-      baseURL: 'https://directus.tpanews.demcraft.site/assets/',
+      baseURL: process.env.DIRECTUS_URL + 'assets/',
     }
   },
   directus: {

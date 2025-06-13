@@ -1,61 +1,5 @@
-import type { ClassificationTypeNames } from "typescript"
 import type { Author } from "./Author"
 
-export type Media = {
-  id: number,
-  documentId: string,
-  url: string,
-  formats: {
-      large?: {
-        ext: string,
-        url: string,
-        hash: string,
-        mime: string,
-        name: string,
-        path: string | null,
-        size: number,
-        width: number,
-        height: number,
-        sizeInBytes: number
-      },
-      small?: {
-        ext: string,
-        url: string,
-        hash: string,
-        mime: string,
-        name: string,
-        path: string | null,
-        size: number,
-        width: number,
-        height: number,
-        sizeInBytes: number
-      },
-      medium?: {
-        ext: string,
-        url: string,
-        hash: string,
-        mime: string,
-        name: string,
-        path: string | null,
-        size: number,
-        width: number,
-        height: number,
-        sizeInBytes: number
-      },
-      thumbnail?: {
-        ext: string,
-        url: string,
-        hash: string,
-        mime: string,
-        name: string,
-        path: string | null,
-        size: number,
-        width: number,
-        height: number,
-        sizeInBytes: number
-      },
-  }
-}
 
 export type Category = {
   id: string,
@@ -77,7 +21,7 @@ export class Article {
   coverImage: string;
   featured: boolean;
   content: string;
-  authors: number[];
+  authors: number[] | Author[];
   short_title: string;
 
   constructor(

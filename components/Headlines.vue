@@ -17,7 +17,7 @@ const { data: items, status } = useAsyncData<Article[]>('featuredArticles', asyn
 </script>
 
 <template>
-  <section>
+  <section v-if="items && items.length > 0">
     <div class="max-w-3/5 grid md:grid-cols-4 md:grid-rows-2 grid-cols-1 gap-4">
       <article v-if="items.length > 0" class="col-span-3 grid md:grid-cols-2">
         <div>

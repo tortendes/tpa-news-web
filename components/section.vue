@@ -30,8 +30,8 @@ const { data: articles, status: articleStatus } = await useAsyncData<Article[]>(
                 'title',
                 'description',
                 'coverImage',
-                'authors.author_id.username',
-                'authors.author_id.id'
+                'authors.author_id.*',
+                'slug'
             ]
         }
     })

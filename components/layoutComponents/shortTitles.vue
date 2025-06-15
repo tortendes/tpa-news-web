@@ -1,5 +1,5 @@
 <template>
-    <section v-for="item in fetchLive" class="flex gap-2">
+    <section v-for="(item, key) in fetchLive" :key="key" class="flex gap-2">
         <NuxtLink :href="`/articles/live/${item.id}`">
             <p class="font-display font-semibold">{{ item.short_title }}</p>
         </NuxtLink>

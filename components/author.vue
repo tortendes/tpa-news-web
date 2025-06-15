@@ -2,7 +2,7 @@
 import type { Author } from '~/types/Author';
 
 type AuthorObject = {
-    author_id: Author[]
+    author_id: Author[] |
 }
 
 const props = defineProps<{ authors: AuthorObject[] }>()

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Article, AuthorRelation } from '~/types/Article';
 import type { Author } from '~/types/Author';
-import MDCPlayer from '~/components/mdc/player.vue'
-import Donate from '~/components/donate.vue'
+import MDCPlayer from '~/components/mdc/MinecraftPlayer.vue'
+import Donate from '~/components/SendDonate.vue'
 const route = useRoute()
 const { getItems, getItemById } = useDirectusItems();
 

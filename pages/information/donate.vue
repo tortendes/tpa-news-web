@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import MdcPlayer from '~/components/mdc/player.vue';
+import MdcPlayer from '~/components/mdc/MinecraftPlayer.vue';
 import OurPeople from '~/components/OurPeople.vue'
 definePageMeta({
     layout: 'footer-only'

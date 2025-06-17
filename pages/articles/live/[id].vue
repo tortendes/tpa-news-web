@@ -2,7 +2,7 @@
 import relativeTime from 'dayjs/plugin/relativeTime' 
 import type { Live, LiveReport } from '~/types/Article';
 import ArticleComponent from '~/components/LiveArticle/ArticleComponent.vue'
-import Donate from '~/components/donate.vue'
+import Donate from '~/components/SendDonate.vue'
 const route = useRoute();
 const { getItems, getItemById } = useDirectusItems();
 useDayjs().extend(relativeTime)

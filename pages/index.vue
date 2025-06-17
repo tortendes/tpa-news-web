@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Donate from '~/components/donate.vue'
-import Section from '~/components/section.vue'
+import Donate from '~/components/SendDonate.vue'
+import Section from '~/components/SectionList.vue'
 useSeoMeta({
     title: 'TPA News - Breaking News, Redmont News. Alexandria News and More'
 })

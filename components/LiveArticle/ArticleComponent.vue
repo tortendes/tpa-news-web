@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { LiveReport } from '~/types/Article';
-import MDCPlayer from '~/components/mdc/player.vue'
+import MDCPlayer from '~/components/mdc/MinecraftPlayer.vue'
 
 const props = defineProps<{ content: LiveReport }>()
 </script>

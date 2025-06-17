@@ -5,10 +5,10 @@
         </span>
         <div class="flex flex-col">
             <h1 class="text-xl">
-                <slot  mdc-unwrap="p"></slot>
+                <slot name="title" mdc-unwrap="p" />
             </h1>
             <p class="text-sm text-gray-600">
-                <slot name="description" mdc-unwrap="p"></slot>
+                <slot name="description" mdc-unwrap="p" />
             </p>
         </div>
     </div>

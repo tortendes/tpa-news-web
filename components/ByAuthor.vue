@@ -1,11 +1,7 @@
 <script lang="ts" setup>
 import type { Author } from '~/types/Author';
 
-type AuthorObject = {
-    author_id: Author[]
-}
-
-const props = defineProps<{ authors: AuthorObject[] }>()
+const props = defineProps<{ authors: Author[] }>()
 </script>
 
 <template>
@@ -16,9 +12,9 @@ const props = defineProps<{ authors: AuthorObject[] }>()
             :href="`/by/${author.id}`"
             class="font-medium hover:underline hover:underline-offset-4 inline-flex items-center"
             >
-                <Player :username="author.author_id.username">
+                <MinecraftPlayer :username="author.author_id.username">
                     {{ author.author_id.username }}
-                </Player>
+                </MinecraftPlayer>
             </NuxtLink>
             <span v-if="indx < props.authors.length - 2">, </span>
             <span v-else-if="indx === props.authors.length - 2">, and </span>

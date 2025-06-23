@@ -43,7 +43,7 @@ const { data: articles, status: articleStatus } = await useAsyncData<Article[]>(
         <h1 v-if="sectionInfo.title" class="text-3xl font-display font-extrabold">{{ sectionInfo.title }}</h1>
     </div>
     <div v-if="articleStatus == 'success' && articles && articles.length > 0" class="flex items-start overflow-x-scroll gap-4 py-2">
-        <article v-for="(item, index) in articles" :key="index" class="w-96 flex flex-col gap-0.5 items-start">
+        <article v-for="(item, index) in articles" :key="index" class="min-w-80 max-w-96 flex flex-col gap-0.5 items-start">
             <NuxtLink :href="`/articles/${item.slug}`">
                 <NuxtImg :src="item.coverImage" provider="directus" class="aspect-16/9 object-cover rounded-md md-32" width="1280" height="720" />
                 <div>
